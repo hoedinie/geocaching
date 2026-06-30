@@ -1,0 +1,5 @@
+# One GC code per line.
+# Lines starting with # are ignored.
+#
+# GCBGQRM
+#

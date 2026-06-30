@@ -1,0 +1,44 @@
+{
+  "mode": "challenges",
+  "codesFile": "caches.txt",
+  "dryRun": true,
+  "delaySeconds": 4,
+  "maxRetries": 3,
+  "headless": false,
+  "userDataDir": ".geocaching-browser-profile",
+  "logFile": "logs/fn-coordinate-updater.log",
+  "reportFile": "logs/fn-coordinate-report.txt",
+  "baseUrl": "https://coord.info",
+  "selectors": {
+    "publishedCoordinate": [
+      "#uxLatLon",
+      "[data-testid='coordinates']",
+      ".coordinates",
+      ".CoordInfoCode"
+    ],
+    "waypointRows": [
+      "#ctl00_ContentBody_Waypoints tr",
+      "#ctl00_ContentBody_WaypointsGrid tr",
+      "table tr"
+    ],
+    "editCoordinates": [
+      "a:has-text('Edit Coordinates')",
+      "button:has-text('Edit Coordinates')",
+      "a:has-text('Update Coordinates')",
+      "button:has-text('Update Coordinates')",
+      "a:has-text('Edit')"
+    ],
+    "saveCoordinates": [
+      "button:has-text('Save')",
+      "input[type='submit'][value*='Save']",
+      "button:has-text('Submit')",
+      "input[type='submit'][value*='Submit']"
+    ],
+    "acceptCoordinates": [
+      "button:has-text('Accept')",
+      "input[type='submit'][value*='Accept']",
+      "button:has-text('OK')",
+      "button:has-text('Ok')"
+    ]
+  }
+}

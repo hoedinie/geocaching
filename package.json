@@ -1,0 +1,14 @@
+{
+  "name": "geocaching-fn-coordinate-updater",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "login": "node ./update-fn-coordinates.mjs --login",
+    "dry-run": "node ./update-fn-coordinates.mjs --dry-run",
+    "update": "node ./update-fn-coordinates.mjs --live"
+  },
+  "dependencies": {
+    "playwright": "^1.54.0"
+  }
+}
